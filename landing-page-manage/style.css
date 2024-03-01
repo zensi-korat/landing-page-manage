@@ -1,0 +1,110 @@
+:root {
+  --clr-primary: rgba(36, 171, 112);
+  --clr-primary-100:rgba(36, 171, 112, 0.04);
+
+  --clr-neutral-100: rgba(221, 221, 221, 1);
+  --clr-neutral-200: rgba(85, 85, 85, 1);
+  --clr-neutral-900: rgba(34, 34, 34, 1);
+
+  --ff-primary: "Open Sans", sans-serif;;
+  --ff-body: var(var(--ff-primary));
+  --ff-heading: var(var(--ff-primary));
+
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+
+  --fs-300: 0.8125rem;
+  --fs-400: 0.875rem;
+  --fs-500: 1rem;
+  --fs-600: 1.875rem;
+  --fs-700: 2.5rem;
+
+  --fs-body: var(--fs-400);
+  --fs-nav: var(--fs-500);
+}
+
+@media (min-width: 50em) {
+  :root {
+    --fs-700: 3.5rem;
+    --fs-600: 2.5rem;
+
+    --fs-body: var(--fs-500)
+    --fs-nav: var(--fs-300)
+  }
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}                
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
