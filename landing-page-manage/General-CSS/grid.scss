@@ -1,0 +1,53 @@
+$grid-gutter-width: 40px;
+$grid-columns: 12;
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: calc($grid-gutter-width/2);
+  padding-right: calc($grid-gutter-width/2);
+}
+
+.container-fluid {
+  margin: 0 auto;
+  padding-left: calc($grid-gutter-width/2);
+  padding-right: calc($grid-gutter-width/2);
+  width: 100%;
+  // max-width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline: 0 - calc($grid-gutter-width/2);
+
+  /*for gutters*/
+  & > * {
+    padding-left: calc($grid-gutter-width/2);
+    padding-right: calc($grid-gutter-width/2);
+  }
+
+  $grid-breakpoints: (
+    xs: 360px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+  );
+
+  @mixin make-col($media, $col, $grid-columns) {
+    .col-#{$media}-#{$col} {
+      width: #{$col * calc(100% / $grid-columns)};
+      flex: 0 0 auto;
+    }
+  }
+
+  @each $media, $breakpoint in $grid-breakpoints {
+    @media screen and (min-width: #{$breakpoint}) {
+      @for $column from 1 through $grid-columns {
+        @include make-col($media, $column, $grid-columns);
+      }
+    }
+  }
+}

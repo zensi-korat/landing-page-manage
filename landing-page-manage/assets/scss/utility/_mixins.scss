@@ -1,0 +1,18 @@
+@mixin button-style($color: $secondary-color, $background-color: $green) {
+  padding: 18px 50px;
+  color: $color;
+  background-color: $background-color;
+  border-radius: 20px;
+  text-decoration: none;
+  gap: 8px;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+@mixin typography($size, $weight, $line-height) {
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+}

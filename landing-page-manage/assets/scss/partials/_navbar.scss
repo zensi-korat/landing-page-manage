@@ -1,0 +1,54 @@
+.primary-header {
+  margin-top: 1.25rem;
+}
+
+.primary-navigation[data-visible] {
+  position: fixed;
+  display: block;
+}
+
+.primary-navigation {
+  display: block;
+
+  li {
+    text-align: center;
+    margin-bottom: 1.25rem;
+    @include typography(var(--fs-500), 400, 150%);
+
+    &:last-child {
+      margin-bottom: 0; // Remove margin-bottom for the last child
+    }
+  }
+
+  @media (max-width: 50em) {
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color: var(--clr-primary-100);
+    inset: 5rem 1rem auto;
+    border-radius: 1rem;
+    padding: 1.25rem;
+  }
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mobile-nav-toggle {
+  display: none;
+
+  .icon-close {
+    display: none;
+  }
+  @media (max-width: 50em) {
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 0.5em;
+  }
+}
