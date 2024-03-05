@@ -1,18 +1,22 @@
-@mixin button-style($color: $secondary-color, $background-color: $green) {
-  padding: 18px 50px;
+@mixin button-style(
+  $padding: 1rem 2rem,
+  $color: var(--clr-neutral-50),
+  $background-color: var(--clr-primary)
+) {
+  padding: $padding;
   color: $color;
   background-color: $background-color;
-  border-radius: 20px;
-  text-decoration: none;
-  gap: 8px;
-  transition: all 0.5s;
-  &:hover {
-    transform: scale(1.1);
-  }
+  border-radius: 2.18rem;
+  border: none;
+  // transition: all 0.5s;
+  // &:hover {
+  //   transform: scale(1.1);
+  // }
 }
 
-@mixin typography($size, $weight, $line-height) {
+@mixin typography($size, $weight, $line-height, $color) {
   font-size: $size;
   line-height: $line-height;
   font-weight: $weight;
+  color: $color;
 }

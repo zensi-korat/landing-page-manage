@@ -1,26 +1,26 @@
 .container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 1280px;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .container-fluid {
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
   width: 100%;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-inline: -20px;
+  margin-inline: -30px;
   /*for gutters*/
 }
 .row > * {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 @media screen and (min-width: 360px) {
   .row .col-xs-1 {

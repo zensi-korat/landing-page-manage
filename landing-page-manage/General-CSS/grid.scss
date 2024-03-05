@@ -1,15 +1,15 @@
-$grid-gutter-width: 40px;
+$grid-gutter-width: 60px;
 $grid-columns: 12;
 
 .container {
-  max-width: 1140px;
-  margin: 0 auto;
+  max-width: 1280px;
+  margin: auto;
   padding-left: calc($grid-gutter-width/2);
   padding-right: calc($grid-gutter-width/2);
 }
 
 .container-fluid {
-  margin: 0 auto;
+  margin: auto;
   padding-left: calc($grid-gutter-width/2);
   padding-right: calc($grid-gutter-width/2);
   width: 100%;

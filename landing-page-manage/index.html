@@ -21,7 +21,7 @@
     <header class="primary-header">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12 nav-wrapper">
+          <div class="col-lg-12 nav-wrapper">
             <a href="#"><img src="./assets/images/logo.svg" alt="Hotelo" /></a>
             <button
               class="mobile-nav-toggle"
@@ -41,7 +41,7 @@
               />
             </button>
             <nav class="primary-navigation" id="primary-navigation">
-              <ul aria-label="Primary" role="list">
+              <ul aria-label="Primary" role="list" class="nav-list">
                 <li><a href="#">Booking</a></li>
                 <li><a href="#">Facilities</a></li>
                 <li><a href="#">About Us</a></li>
@@ -49,7 +49,7 @@
                 <li><a href="#">Contact</a></li>
               </ul>
             </nav>
-            <button class="button">Login</button>
+            <button class="login-button">Login</button>
           </div>
         </div>
       </div>
@@ -58,24 +58,68 @@
     <!-- hero section -->
     <main>
       <section>
-        <div class="container">
+        <div class="container hero">
           <div class="row">
-            <div class="col-6">
-              <h1>Find your perfect place to stay</h1>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <p>watch video</p>
+            <div class="col-lg-6 hero-section">
+              <div class="hero-data">
+                <h1 class="hero-heading">Find your perfect place to stay</h1>
+                <p class="hero-subheading">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div class="play">
+                  <div class="play-icon">
+                    <img src="./assets/images/play.svg" alt="play" />
+                  </div>
+                  <p class="play-text">Watch video</p>
+                </div>
+              </div>
             </div>
-            <div class="col-6">image</div>
+            <div class="col-lg-6 hero-image"></div>
+
+            <form class="info-bar-wrapper">
+              <div class="info-bar">
+                <div class="info-widgets location">
+                  <img src="./assets/images/location.svg" alt="location" />
+                  <div>
+                    <h2>Location</h2>
+                    <p>United States</p>
+                  </div>
+                </div>
+                <div class="info-widgets checkin">
+                  <img src="./assets/images/calendar.svg" alt="calender" />
+                  <div>
+                    <h2>Check in</h2>
+                    <p>10 Jun 2021</p>
+                  </div>
+                </div>
+                <div class="info-widgets checkout">
+                  <img src="./assets/images/calendar.svg" alt="calender" />
+                  <div>
+                    <h2>Check Out</h2>
+                    <p>15 Jun 2021</p>
+                  </div>
+                </div>
+                <div class="info-widgets rooms">
+                  <img src="./assets/images/user.svg" alt="user" />
+                  <div>
+                    <h2>Rooms for</h2>
+                    <p>1 room, 2 guests</p>
+                  </div>
+                </div>
+                <button class="search-button">
+                  <img src="./assets/images/search.svg" alt="search" />
+                  Search...
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
       <section>
         <div class="container">
           <div class="row">
-            <div class="col-12">
+            <div class="col-lg-12">
               <h2>Our most popular Hotels</h2>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
