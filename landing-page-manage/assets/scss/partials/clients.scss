@@ -1,0 +1,13 @@
+.clients {
+  display: flex;
+  justify-content: center;
+
+  justify-items: center;
+
+  margin-bottom: 60px;
+
+  @media (min-width: 48em) {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+}

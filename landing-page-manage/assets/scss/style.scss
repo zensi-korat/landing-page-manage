@@ -5,6 +5,9 @@
 @import "./partials/hotels";
 @import "./partials/facilities";
 @import "./partials/history";
+@import "./partials/slider";
+@import "./partials/clients.scss";
+@import "./partials/location";
 
 .visually-hidden {
   position: absolute;
@@ -16,4 +19,16 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+.p-bottom {
+  padding-bottom: 7.5rem;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.ai-center {
+  align-items: center;
 }

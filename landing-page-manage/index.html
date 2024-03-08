@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./General-CSS/normalized.scss" />
     <link rel="stylesheet" href="./General-CSS/grid.scss" />
     <link rel="stylesheet" href="./assets/css/global.scss" />
@@ -14,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+
     <title>Hotelo</title>
   </head>
   <body>
@@ -594,7 +599,7 @@
     </section>
 
     <!-- facilities section -->
-    <section class="container facilities">
+    <section class="container p-bottom">
       <div class="row">
         <div class="col-lg-4">
           <h2 class="facilities-heading">
@@ -646,7 +651,7 @@
     </section>
 
     <!-- history section -->
-    <section class="container history">
+    <section class="container p-bottom">
       <div class="row">
         <div class="col-sm-12 col-md-6 history-image"></div>
         <div class="col-sm-12 col-md-6 history-section">
@@ -662,34 +667,149 @@
               Ipsum is simply dummy text of the printing and typesetting
               industry.
             </p>
-            <button class="cta-button">Explore More</button>
+            <button class="explore-button">Explore More</button>
           </div>
         </div>
       </div>
     </section>
 
     <!-- slider section -->
-    <section class="container slider">
-      <div class="row">
-        <div class="swiper mySwiper">
+    <!-- <section class="swiper">
+      <div class="container">
+        <div class="row mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">
+              <div class="col-lg-9">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy Lorem Ipsum is simply dummy text of the
+                  printing and typesetting industry. Lorem Ipsum is simply dummy
+                  text of the printing and typesetting industry. Lorem Ipsum has
+                  been the industry's standard dummy Lorem Ipsum is simply dummy
+                  text of the printing and typesetting industry.
+                </p>
+                <h4>Alexandr Ivchenko</h4>
+                <p>Businessman</p>
+              </div>
+              <div class="col-lg-3">
+                <img src="./assets/images/user.png" alt="" />
+              </div>
+            </div>
             <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
       </div>
+    </section> -->
+
+    <div class="container p-bottom">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- slide 1 -->
+          <div class="swiper-slide">
+            <div class="slider-content">
+              <p class="slider-heading">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy Lorem Ipsum is simply dummy text of the printing
+                and typesetting industry.
+              </p>
+              <h4>Alexandr Ivchenko</h4>
+              <p>Businessman</p>
+            </div>
+            <img src="./assets/images/user.png" alt="user" />
+          </div>
+          <!-- slide 2 -->
+          <div class="swiper-slide">
+            <div class="slider-content">
+              <p class="slider-heading">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy Lorem Ipsum is simply dummy text of the printing
+                and typesetting industry.
+              </p>
+              <h4>Alexandr Ivchenko</h4>
+              <p>Businessman</p>
+            </div>
+            <img src="./assets/images/user.png" alt="" />
+          </div>
+          <!-- slide 3 -->
+          <div class="swiper-slide">
+            <div class="slider-content">
+              <p class="slider-heading">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy Lorem Ipsum is simply dummy text of the printing
+                and typesetting industry.
+              </p>
+              <h4>Alexandr Ivchenko</h4>
+              <p>Businessman</p>
+            </div>
+            <img src="./assets/images/user.png" alt="" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <!-- clients section -->
+
+    <section class="container p-bottom">
+      <div class="row jc-center ai-center">
+        <div class="col-xs-12 col-md-2 clients">
+          <img src="./assets/images/hotel-logo1.png" alt="logo1" />
+        </div>
+        <div class="col-xs-12 col-md-2 clients">
+          <img src="./assets/images/hotel-logo2.png" alt="logo2" />
+        </div>
+        <div class="col-xs-12 col-md-2 clients">
+          <img src="./assets/images/hotel-logo3.png" alt="logo3" />
+        </div>
+        <div class="col-xs-12 col-md-2 clients">
+          <img src="./assets/images/hotel-logo4.png" alt="logo4" />
+        </div>
+        <div class="col-xs-12 col-md-2 clients">
+          <img src="./assets/images/hotel-logo5.png" alt="logo5" />
+        </div>
+      </div>
+    </section>
+
+    <!-- location section -->
+    <section class="container p-bottom">
+      <div class="row">
+        <div class="col-lg-12 location">
+          <div class="location-dialog">
+            <div class="col-lg-7">
+              <h2>Location of our Hotelos</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's
+              </p>
+            </div>
+            < class="col-lg-5">
+              <input type="text" >
+              <button>Contact</button>
+          </input>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <script type="module" src="/main.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
