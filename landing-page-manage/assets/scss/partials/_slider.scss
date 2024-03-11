@@ -11,14 +11,26 @@
   align-items: center;
   background: var(--clr-neutral-300);
   border-radius: 1rem;
-  // background: pink;
+  min-height: 400px;
+  flex-direction: column-reverse;
+
+  @media (min-width: 62em) {
+    flex-direction: row;
+  }
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
+  margin-bottom: 1.5rem;
+
   border-radius: 0 1rem 1rem 0;
+  @media (min-width: 62em) {
+    min-width: 423px;
+    min-height: 400px;
+    margin-bottom: 0;
+  }
 }
 
 .swiper-button-next,
@@ -43,12 +55,16 @@
   min-height: 400px;
   justify-content: flex-start;
   height: 100%;
-  padding: 65px 92px;
+  padding: 4px 45px;
   text-align: left;
 
   h4 {
     @include typography(var(--fs-600), 600, 117%, var(--clr-neutral-900));
     margin-bottom: 12px;
+  }
+
+  @media (min-width: 36em) {
+    padding: 4px 85px;
   }
 }
 

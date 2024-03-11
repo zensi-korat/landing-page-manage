@@ -79,47 +79,6 @@
           </div>
         </div>
         <div class="col-md-6 hero-image"></div>
-
-        <div class="info-bar-wrapper">
-          <div class="info-bar">
-            <div class="info-widget-group">
-              <div class="info-widgets location">
-                <img src="./assets/images/location.svg" alt="location" />
-                <div>
-                  <h2>Location</h2>
-                  <p>United States</p>
-                </div>
-              </div>
-              <div class="info-widgets checkin">
-                <img src="./assets/images/calendar.svg" alt="calender" />
-                <div>
-                  <h2>Check in</h2>
-                  <p>10 Jun 2021</p>
-                </div>
-              </div>
-            </div>
-            <div class="info-widget-group">
-              <div class="info-widgets checkout">
-                <img src="./assets/images/calendar.svg" alt="calender" />
-                <div>
-                  <h2>Check Out</h2>
-                  <p>15 Jun 2021</p>
-                </div>
-              </div>
-              <div class="info-widgets rooms">
-                <img src="./assets/images/user.svg" alt="user" />
-                <div>
-                  <h2>Rooms for</h2>
-                  <p>1 room, 2 guests</p>
-                </div>
-              </div>
-            </div>
-            <button class="search-button">
-              <img src="./assets/images/search.svg" alt="search" />
-              Search...
-            </button>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -704,7 +663,7 @@
       </div>
     </section> -->
 
-    <div class="container p-bottom">
+    <div class="container p-bottom"> 
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <!-- slide 1 -->
@@ -722,7 +681,10 @@
               <h4>Alexandr Ivchenko</h4>
               <p>Businessman</p>
             </div>
-            <img src="./assets/images/user.png" alt="user" />
+            <div>
+
+              <img src="./assets/images/user.png" alt="user" />
+            </div>
           </div>
           <!-- slide 2 -->
           <div class="swiper-slide">
@@ -789,24 +751,68 @@
     <!-- location section -->
     <section class="container p-bottom">
       <div class="row">
-        <div class="col-lg-12 location">
+        <div class="col-xs-12 col-lg-12 location">
           <div class="location-dialog">
-            <div class="col-lg-7">
+            <div class="row">
+            <div class="col-lg-12">
               <h2>Location of our Hotelos</h2>
+            </div>
+            <div class="col-xs-12 col-lg-6">
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's
               </p>
-            </div>
-            < class="col-lg-5">
-              <input type="text" >
-              <button>Contact</button>
           </input>
+            </div>
+            <div class="col-xs-12 col-lg-6">
+              <div class="email">
+                <input type="text" placeholder="Enter your email">
+                <button class="contact-button">Contact</button>
+              </div>
+              </div>
+          </input>
+            </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+      <!-- footer section -->
+      <section class="container footer">
+      <div class="row jc-around">
+        <div class="col-xs-12 col-lg-4 footer-company">
+           <a href="#"><img src="./assets/images/logo.svg" alt="Hotelo" /></a>
+           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+           <div class="footer-social">
+            <img src="./assets/images/facebook.svg" alt="facebook">
+            <img src="./assets/images/instagram.svg" alt="instagram">
+            <img src="./assets/images/google.svg" alt="google">
+           </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-lg-3  footer-details">
+         <h2 class="footer-heading">Home</h2> 
+         <p>Booking</p>
+         <p>Facilities</p>
+         <p>Location</p>
+         <p>Contact</p>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-lg-3  footer-details">
+         <h2 class="footer-heading">Help</h2> 
+         <p>About Us</p>
+         <p>Help center</p>
+         <p>Privacy policy</p>
+         <p>FAQs</p>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-lg-2 footer-details">
+         <h2 class="footer-heading">Get the app</h2> 
+         <p>iOS app</p>
+         <p>Android app</p>
+        </div>
+      
+      </div>
+    </section>
+
 
     <script type="module" src="/main.js"></script>
 

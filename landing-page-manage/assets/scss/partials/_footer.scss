@@ -1,0 +1,27 @@
+.footer {
+  padding: 50px;
+}
+
+.footer-company {
+  img {
+    margin-bottom: 24px;
+  }
+  p {
+    margin-bottom: 32px;
+  }
+  .footer-social {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.footer-heading {
+  @include typography(var(--fs-600), 400, 133%, var(--clr-neutral-900));
+  margin-bottom: var(--fs-600);
+}
+
+.footer-details {
+  p {
+    margin-bottom: var(--fs-500);
+  }
+}
