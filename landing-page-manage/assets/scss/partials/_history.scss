@@ -3,15 +3,15 @@
 }
 
 .history-image {
-  background-image: url("/assets/images/hotel5.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  min-height: 520px;
   width: 100%;
-  border-radius: 0.625rem;
 
-  @media (min-width: 48em) {
-    border-radius: 0.625rem 0 0 0.625rem;
+  img {
+    border-radius: 0.625rem;
+    height: 100%;
+
+    @media (min-width: 48em) {
+      border-radius: 0.625rem 0 0 0.625rem;
+    }
   }
 }
 
@@ -20,8 +20,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  min-height: 32.5rem;
-  padding: 2rem 0;
+  padding: 2rem;
+  width: 100%;
+  background-color: var(--clr-primary-100);
 
   .history-heading {
     @include typography(var(--fs-800), 600, 125%, var(--clr-neutral-1000));
@@ -56,6 +57,10 @@
 }
 
 .history-section {
-  background-color: var(--clr-primary-100);
-  border-radius: 0 1rem 1rem 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 48em) {
+    flex-direction: row;
+  }
 }

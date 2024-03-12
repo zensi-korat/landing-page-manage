@@ -1,6 +1,11 @@
 .primary-navigation[data-visible] {
   position: fixed;
   display: block;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 .primary-header[data-overlay]::before {
@@ -15,7 +20,7 @@
 
 .nav-list {
   text-align: center;
-  @include typography(var(--fs-500), 400, 150%, var(--clr-neutral-900));
+  @include typography(var(--fs-500), 500, 150%, var(--clr-neutral-900));
   display: flex;
   gap: clamp(40px, 10px, 30px);
 
@@ -37,10 +42,10 @@
     display: none;
     position: fixed;
     top: 0;
-    background-color: var(--clr-neutral-50);
-    inset: 6rem 0.5rem auto;
+    background-color: rgb(200, 246, 215);
+    inset: 6rem 0.5rem 0.2rem;
     border-radius: 0.5rem;
-    padding: 3rem;
+    padding: 11rem;
     box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.05);
     color: black;
   }
@@ -52,6 +57,10 @@
   justify-content: space-between;
   width: 100%;
   padding: 40px;
+
+  a {
+    z-index: 3;
+  }
 }
 
 .mobile-nav-toggle {
@@ -66,6 +75,7 @@
     background: transparent;
     border: 0;
     padding: 0.5em;
+    z-index: 3;
   }
 }
 

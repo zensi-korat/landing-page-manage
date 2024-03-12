@@ -1,39 +1,41 @@
 .hero {
-  position: relative;
   min-height: 656px;
   height: 100%;
+  padding-bottom: 13.5rem;
 
   .hero-height {
+    position: relative;
     min-height: 475px;
 
     @media (min-width: 48em) {
       min-height: 656px;
     }
   }
+
+  @media (min-width: 48em) {
+    padding-bottom: 0.5rem;
+  }
 }
 
 .hero-image {
   display: none;
+  width: 50%;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 
   @media (min-width: 48em) {
     display: block;
-    background: url(" /assets/images/home.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-}
-
-.hero-section {
-  background-color: var(--clr-primary-100);
-  border-radius: 50px;
-
-  @media (min-width: 48em) {
-    border-radius: 50px 0 0 0;
   }
 }
 
 .hero-data {
-  padding: 48px 10px;
+  width: 100%;
+  padding: 48px;
+  border-radius: 50px;
+  background-color: var(--clr-primary-100);
 
   .hero-heading {
     @include typography(var(--fs-700), 600, 125%, var(--clr-neutral-1000));
@@ -87,14 +89,16 @@
   }
 
   @media (min-width: 48em) {
-    padding: 88px var(--fs-550) var(--fs-800);
+    width: 50%;
+    padding: 88px var(--fs-700) var(--fs-800);
+    border-radius: 50px 0 0 0;
   }
 }
 
 .info-bar-wrapper {
   position: absolute;
-  bottom: -7rem;
-  right: 2.2rem;
+  bottom: -21rem;
+  right: 2rem;
   min-width: 11.5rem;
   box-shadow: 0px 22px 38px 0px rgba(0, 34, 19, 0.08);
   background-color: var(--clr-neutral-50);
@@ -106,17 +110,18 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 25px;
 
     .info-widget-group {
       display: flex;
       flex-direction: column;
+      justify-content: space-around;
       .info-widgets {
         display: flex;
         gap: 10px;
         align-items: flex-start;
         margin-bottom: 20px;
-        padding-right: 3.4rem;
+        // padding-right: 3.4rem;
 
         h2 {
           @include typography(var(--fs-550), 400, 120%, var(--clr-neutral-900));
@@ -133,6 +138,7 @@
 
       @media (min-width: 75em) {
         flex-direction: row;
+        width: 50%;
       }
     }
 
@@ -157,21 +163,26 @@
     }
     @media (min-width: 75em) {
       flex-direction: row;
-      justify-content: unset;
+      // justify-content: unset;
       padding: 0;
       padding-left: 3.15rem;
     }
   }
 
-  @media (min-width: 575px) {
+  @media (min-width: 36em) {
     right: 3.5rem;
-    bottom: -6rem;
+    bottom: -17rem;
     border-radius: 3rem;
   }
 
+  @media (min-width: 48em) {
+    right: 4.9rem;
+    bottom: -6rem;
+  }
+
   @media (min-width: 75em) {
-    right: 3.5rem;
-    bottom: 4rem;
+    right: 7.5rem;
+    bottom: 1rem;
     border-radius: 3rem;
   }
 }
