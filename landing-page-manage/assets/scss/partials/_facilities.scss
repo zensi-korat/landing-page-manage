@@ -1,3 +1,5 @@
+@use "../utility/mixins" as *;
+
 .facilities-heading {
   @include typography(2rem, 600, 125%, var(--clr-neutral-1000));
   margin-bottom: 20px;

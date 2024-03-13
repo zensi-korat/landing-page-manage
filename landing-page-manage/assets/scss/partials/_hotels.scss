@@ -1,5 +1,10 @@
+@use "../utility/mixins" as *;
+
 .hotels {
-  padding-block: 150px;
+  padding-block: 0;
+  @media (min-width: 62em) {
+    padding-block: 9.375rem;
+  }
 }
 
 .hotels-heading {
@@ -40,22 +45,26 @@
   }
 }
 
+.hotels-heading ~ div {
+  margin-bottom: 3.125rem;
+}
+
 .hotels-wrapper {
   border-color: var(--clr-neutral-100);
-  border-radius: 1rem;
+  border-radius: var(--fs-500);
   background-color: var(--clr-neutral-300);
   height: 100%;
 }
 
 .hotels-details {
-  padding: 1.5rem 1rem;
+  padding: var(--fs-600) var(--fs-500);
   h6 {
     @include typography(var(--fs-300), 400, 120%, var(--clr-primary));
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
   }
   h3 {
     @include typography(1.4rem, 600, 125%, var(--clr-neutral-900));
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -66,8 +75,8 @@
   gap: 1rem;
 
   .hotels-price {
-    padding-right: 30px;
-    border-right: 1px solid var(--clr-neutral-100);
+    padding-right: 1.875rem;
+    border-right: 0.0625rem solid var(--clr-neutral-100);
 
     @media ((min-width: 48em) and (max-width: 75em)) {
       border: none;
@@ -93,24 +102,19 @@
     color: var(--clr-neutral-400);
     cursor: pointer;
     margin-right: 0.25rem;
+
+    &:hover {
+      color: var(--clr-secondary);
+    }
   }
 
-  //   &:checked {
-  //     ~ {
-  //       label {
-  //         svg {
-  //           color: #fc0;
-  //         }
-  //       }
-  //     }
-  //   }
-}
-
-.star-box :checked ~ label svg {
-  color: #fc0;
-}
-
-.star-box label:hover,
-.star-box label:hover ~ label {
-  color: #fc0;
+  & :checked {
+    ~ {
+      label {
+        svg {
+          color: var(--clr-secondary);
+        }
+      }
+    }
+  }
 }

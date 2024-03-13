@@ -1,10 +1,8 @@
 .clients {
   display: flex;
   justify-content: center;
-
-  justify-items: center;
-
-  margin-bottom: 60px;
+  align-items: center;
+  margin-bottom: var(--fs-900);
 
   @media (min-width: 48em) {
     flex-direction: row;

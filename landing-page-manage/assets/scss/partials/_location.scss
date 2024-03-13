@@ -1,3 +1,5 @@
+@use "../utility/mixins" as *;
+
 .location {
   background: url("/assets/images/map.png");
   background-size: cover;

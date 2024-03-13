@@ -1,5 +1,5 @@
-@import "./utility/mixins";
-@import "./global.scss";
+@import "./general-CSS/grid";
+@import "./general-CSS/normalized";
 @import "./partials/navbar";
 @import "./partials/herosection";
 @import "./partials/hotels";
@@ -55,6 +55,7 @@ body {
 :root {
   --clr-primary: rgba(36, 171, 112);
   --clr-primary-100: rgba(36, 171, 112, 0.1);
+  --clr-secondary: rgba(249, 95, 95, 1);
 
   --clr-neutral-50: rgba(255, 255, 255);
   --clr-neutral-100: rgba(221, 221, 221);

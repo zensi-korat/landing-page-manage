@@ -1,17 +1,19 @@
+@use "../utility/mixins" as *;
+
 .footer {
-  padding: 50px;
+  padding: 3.125rem;
 }
 
 .footer-company {
   img {
-    margin-bottom: 24px;
+    margin-bottom: var(--fs-600);
   }
   p {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
   }
   .footer-social {
     display: flex;
-    gap: 30px;
+    gap: 1.875rem;
   }
 }
 

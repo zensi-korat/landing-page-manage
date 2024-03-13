@@ -1,3 +1,5 @@
+@use "../utility/mixins" as *;
+
 .primary-navigation[data-visible] {
   position: fixed;
   display: block;
@@ -43,9 +45,7 @@
     position: fixed;
     top: 0;
     background-color: rgb(200, 246, 215);
-    inset: 6rem 0.5rem 0.2rem;
-    border-radius: 0.5rem;
-    padding: 11rem;
+    padding: 13rem 7rem;
     box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.05);
     color: black;
   }

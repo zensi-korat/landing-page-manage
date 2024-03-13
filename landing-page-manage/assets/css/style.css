@@ -1,3 +1,411 @@
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.container-fluid {
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline: -30px;
+  /*for gutters*/
+}
+.row > * {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media screen and (min-width: 320px) {
+  .row .col-xs-1 {
+    width: 8.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-xs-2 {
+    width: 16.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-xs-3 {
+    width: 25%;
+    flex: 0 0 auto;
+  }
+  .row .col-xs-4 {
+    width: 33.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-xs-5 {
+    width: 41.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-xs-6 {
+    width: 50%;
+    flex: 0 0 auto;
+  }
+  .row .col-xs-7 {
+    width: 58.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-xs-8 {
+    width: 66.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-xs-9 {
+    width: 75%;
+    flex: 0 0 auto;
+  }
+  .row .col-xs-10 {
+    width: 83.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-xs-11 {
+    width: 91.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-xs-12 {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+}
+@media screen and (min-width: 576px) {
+  .row .col-sm-1 {
+    width: 8.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-sm-2 {
+    width: 16.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-sm-3 {
+    width: 25%;
+    flex: 0 0 auto;
+  }
+  .row .col-sm-4 {
+    width: 33.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-sm-5 {
+    width: 41.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-sm-6 {
+    width: 50%;
+    flex: 0 0 auto;
+  }
+  .row .col-sm-7 {
+    width: 58.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-sm-8 {
+    width: 66.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-sm-9 {
+    width: 75%;
+    flex: 0 0 auto;
+  }
+  .row .col-sm-10 {
+    width: 83.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-sm-11 {
+    width: 91.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-sm-12 {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .row .col-md-1 {
+    width: 8.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-md-2 {
+    width: 16.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-md-3 {
+    width: 25%;
+    flex: 0 0 auto;
+  }
+  .row .col-md-4 {
+    width: 33.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-md-5 {
+    width: 41.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-md-6 {
+    width: 50%;
+    flex: 0 0 auto;
+  }
+  .row .col-md-7 {
+    width: 58.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-md-8 {
+    width: 66.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-md-9 {
+    width: 75%;
+    flex: 0 0 auto;
+  }
+  .row .col-md-10 {
+    width: 83.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-md-11 {
+    width: 91.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-md-12 {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .row .col-lg-1 {
+    width: 8.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-lg-2 {
+    width: 16.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-lg-3 {
+    width: 25%;
+    flex: 0 0 auto;
+  }
+  .row .col-lg-4 {
+    width: 33.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-lg-5 {
+    width: 41.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-lg-6 {
+    width: 50%;
+    flex: 0 0 auto;
+  }
+  .row .col-lg-7 {
+    width: 58.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-lg-8 {
+    width: 66.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-lg-9 {
+    width: 75%;
+    flex: 0 0 auto;
+  }
+  .row .col-lg-10 {
+    width: 83.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-lg-11 {
+    width: 91.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-lg-12 {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .row .col-xl-1 {
+    width: 8.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-xl-2 {
+    width: 16.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-xl-3 {
+    width: 25%;
+    flex: 0 0 auto;
+  }
+  .row .col-xl-4 {
+    width: 33.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-xl-5 {
+    width: 41.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-xl-6 {
+    width: 50%;
+    flex: 0 0 auto;
+  }
+  .row .col-xl-7 {
+    width: 58.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-xl-8 {
+    width: 66.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-xl-9 {
+    width: 75%;
+    flex: 0 0 auto;
+  }
+  .row .col-xl-10 {
+    width: 83.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-xl-11 {
+    width: 91.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-xl-12 {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .row .col-xxl-1 {
+    width: 8.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-xxl-2 {
+    width: 16.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-xxl-3 {
+    width: 25%;
+    flex: 0 0 auto;
+  }
+  .row .col-xxl-4 {
+    width: 33.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-xxl-5 {
+    width: 41.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-xxl-6 {
+    width: 50%;
+    flex: 0 0 auto;
+  }
+  .row .col-xxl-7 {
+    width: 58.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-xxl-8 {
+    width: 66.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-xxl-9 {
+    width: 75%;
+    flex: 0 0 auto;
+  }
+  .row .col-xxl-10 {
+    width: 83.3333333333%;
+    flex: 0 0 auto;
+  }
+  .row .col-xxl-11 {
+    width: 91.6666666667%;
+    flex: 0 0 auto;
+  }
+  .row .col-xxl-12 {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
 .primary-navigation[data-visible] {
   position: fixed;
   display: block;
@@ -47,9 +455,7 @@
     position: fixed;
     top: 0;
     background-color: rgb(200, 246, 215);
-    inset: 6rem 0.5rem 0.2rem;
-    border-radius: 0.5rem;
-    padding: 11rem;
+    padding: 13rem 7rem;
     box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.05);
     color: black;
   }
@@ -99,7 +505,6 @@
 }
 
 .hero {
-  min-height: 656px;
   height: 100%;
   padding-bottom: 13.5rem;
 }
@@ -109,7 +514,7 @@
 }
 @media (min-width: 48em) {
   .hero .hero-height {
-    min-height: 656px;
+    min-height: 41rem;
   }
 }
 @media (min-width: 48em) {
@@ -134,8 +539,8 @@
 
 .hero-data {
   width: 100%;
-  padding: 48px;
-  border-radius: 50px;
+  padding: 3rem;
+  border-radius: 3.125rem;
   background-color: var(--clr-primary-100);
 }
 .hero-data .hero-heading {
@@ -186,7 +591,7 @@
   align-items: center;
   justify-content: center;
   border-radius: var(--fs-700);
-  border: 1px solid rgba(232, 232, 232, 0.31);
+  border: 0.0625rem solid rgba(232, 232, 232, 0.31);
 }
 .hero-data .play .play-text {
   font-size: var(--fs-500);
@@ -212,7 +617,7 @@
   bottom: -21rem;
   right: 2rem;
   min-width: 11.5rem;
-  box-shadow: 0px 22px 38px 0px rgba(0, 34, 19, 0.08);
+  box-shadow: 0px 1.375rem 2.375rem 0 rgba(0, 34, 19, 0.08);
   background-color: var(--clr-neutral-50);
   border-radius: 1rem;
   padding: 0;
@@ -222,7 +627,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 25px;
+  padding: var(--fs-600);
 }
 .info-bar-wrapper .info-bar .info-widget-group {
   display: flex;
@@ -231,16 +636,16 @@
 }
 .info-bar-wrapper .info-bar .info-widget-group .info-widgets {
   display: flex;
-  gap: 10px;
+  gap: var(--fs-300);
   align-items: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: var(--fs-550);
 }
 .info-bar-wrapper .info-bar .info-widget-group .info-widgets h2 {
   font-size: var(--fs-550);
   line-height: 120%;
   font-weight: 400;
   color: var(--clr-neutral-900);
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 .info-bar-wrapper .info-bar .info-widget-group .info-widgets p {
   font-size: var(--fs-400);
@@ -265,25 +670,24 @@
   font-weight: 400;
   color: var(--clr-neutral-900);
   cursor: pointer;
-  padding: 8px 46px;
+  padding: 0.5rem 2.875rem;
   color: var(--clr-neutral-50);
   background-color: var(--clr-primary);
   border-radius: 2.18rem;
   border: none;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: var(--fs-300);
   border-radius: 4rem;
 }
 @media (min-width: 48rem) {
   .info-bar-wrapper .info-bar .search-button {
     cursor: pointer;
-    padding: 38px 46px;
+    padding: 2.375rem 2.875rem;
     color: var(--clr-neutral-50);
     background-color: var(--clr-primary);
     border-radius: 2.18rem;
     border: none;
-    margin-left: 50px;
     border-radius: 5rem;
   }
 }
@@ -322,7 +726,12 @@
 }
 
 .hotels {
-  padding-block: 150px;
+  padding-block: 0;
+}
+@media (min-width: 62em) {
+  .hotels {
+    padding-block: 9.375rem;
+  }
 }
 
 .hotels-heading h2 {
@@ -370,29 +779,33 @@
   }
 }
 
+.hotels-heading ~ div {
+  margin-bottom: 3.125rem;
+}
+
 .hotels-wrapper {
   border-color: var(--clr-neutral-100);
-  border-radius: 1rem;
+  border-radius: var(--fs-500);
   background-color: var(--clr-neutral-300);
   height: 100%;
 }
 
 .hotels-details {
-  padding: 1.5rem 1rem;
+  padding: var(--fs-600) var(--fs-500);
 }
 .hotels-details h6 {
   font-size: var(--fs-300);
   line-height: 120%;
   font-weight: 400;
   color: var(--clr-primary);
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 .hotels-details h3 {
   font-size: 1.4rem;
   line-height: 125%;
   font-weight: 600;
   color: var(--clr-neutral-900);
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .hotels-rating {
@@ -402,8 +815,8 @@
   gap: 1rem;
 }
 .hotels-rating .hotels-price {
-  padding-right: 30px;
-  border-right: 1px solid var(--clr-neutral-100);
+  padding-right: 1.875rem;
+  border-right: 0.0625rem solid var(--clr-neutral-100);
 }
 @media ((min-width: 48em) and (max-width: 75em)) {
   .hotels-rating .hotels-price {
@@ -430,14 +843,11 @@
   cursor: pointer;
   margin-right: 0.25rem;
 }
-
-.star-box :checked ~ label svg {
-  color: #fc0;
+.star-box label svg:hover {
+  color: var(--clr-secondary);
 }
-
-.star-box label:hover,
-.star-box label:hover ~ label {
-  color: #fc0;
+.star-box :checked ~ label svg {
+  color: var(--clr-secondary);
 }
 
 .facilities-heading {
@@ -549,7 +959,7 @@
   line-height: 125%;
   font-weight: 600;
   color: var(--clr-neutral-1000);
-  margin-bottom: 20px;
+  margin-bottom: var(--fs-550);
 }
 .history-data .history-subheading {
   font-size: var(--fs-500);
@@ -558,10 +968,10 @@
   color: var(--clr-neutral-200);
 }
 .history-data .history-subheading:first-of-type {
-  margin-bottom: 20px;
+  margin-bottom: var(--fs-550);
 }
 .history-data .history-subheading:not(:first-of-type) {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 .history-data .explore-button {
   font-size: var(--fs-400);
@@ -695,8 +1105,8 @@
 .clients {
   display: flex;
   justify-content: center;
-  justify-items: center;
-  margin-bottom: 60px;
+  align-items: center;
+  margin-bottom: var(--fs-900);
 }
 @media (min-width: 48em) {
   .clients {
@@ -810,18 +1220,18 @@
 }
 
 .footer {
-  padding: 50px;
+  padding: 3.125rem;
 }
 
 .footer-company img {
-  margin-bottom: 24px;
+  margin-bottom: var(--fs-600);
 }
 .footer-company p {
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 .footer-company .footer-social {
   display: flex;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .footer-details li {
@@ -887,6 +1297,7 @@ body {
 :root {
   --clr-primary: rgba(36, 171, 112);
   --clr-primary-100: rgba(36, 171, 112, 0.1);
+  --clr-secondary: rgba(249, 95, 95, 1);
   --clr-neutral-50: rgba(255, 255, 255);
   --clr-neutral-100: rgba(221, 221, 221);
   --clr-neutral-200: rgba(85, 85, 85, 1);
